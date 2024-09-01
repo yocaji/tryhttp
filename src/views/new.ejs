@@ -1,0 +1,22 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= APP_NAME %></title>
+</head>
+<body>
+  <h1>お手紙を出す</h1>
+  <form action="/pages/create" method="post">
+    <div>
+      <label for="title">件名</label>
+      <input type="text" size="30" id="title" name="title" value="白ヤギさんへ" required>
+    </div>
+    <div>
+      <label for="content">本文</label>
+      <textarea rows="4" cols="40" id="content" name="content" required>先ほどの手紙はどのようなご用件でしたでしょうか</textarea>
+    </div>
+    <button type="submit">送信</button>
+</body>
+</html>
