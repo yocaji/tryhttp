@@ -16,5 +16,6 @@
 
     /* Completeness */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
-  }
+  },
+  "include": ["./src/**/*"],                             /* Specify an array of filenames or patterns to include in the program. */
 }
